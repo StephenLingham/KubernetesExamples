@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metaData:
+  name: httpGetExample
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 8080
+      livenessProbe:
+        exec:
+          command:
+            - cat
+            - /app/is_healthy

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metaData:
+  name: httpGetExample
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 8080
+      livenessProbe:
+        httpGet:
+          path: /api/healthy
+          port: 8080
+        initialDelaySeconds: 10
+        periodSeconds: 5
+        failureThreshold: 8
