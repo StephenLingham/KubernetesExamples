@@ -1,4 +1,4 @@
-# Cheat sheet of useful commands
+# Summary sheet of useful commands
 
 ### Aliases
 
