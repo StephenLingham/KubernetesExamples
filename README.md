@@ -74,3 +74,6 @@
 
 * kubectl label nodes [node name] [label key]=[label value]
 * kubectl label nodes [node name] [label key]-
+
+### Observability
+* k logs [pod name] [container name]
