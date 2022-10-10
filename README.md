@@ -17,8 +17,8 @@
 * kubectl delete all --all
 * kubectl rollout status deploy [deployment name]
 * kubectl rollout history deploy [deployment name]
-* kubectl config set-context $(kubectl config current-context) --namespace dev
-* kubectl config set-context --current --namespace=my-namespace
+* kubectl config set-context $(kubectl config current-context) --namespace [namespace name]
+* kubectl config set-context --current --namespace=[namespace name]
 * kubectl create cm [config map name] --from-literal=[key]=[value]
 * kubectl explain pods --recursive | grep envFrom -A3
 
