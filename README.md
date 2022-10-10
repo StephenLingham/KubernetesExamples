@@ -18,6 +18,7 @@
 * kubectl rollout status deploy [deployment name]
 * kubectl rollout history deploy [deployment name]
 * kubectl config set-context $(kubectl config current-context) --namespace dev
+* kubectl config set-context --current --namespace=my-namespace
 * kubectl create cm [config map name] --from-literal=[key]=[value]
 * kubectl explain pods --recursive | grep envFrom -A3
 
@@ -28,6 +29,7 @@
 * kubectl get pods --all-namespaces
 * kubectl get pods -n [namespace]
 * kubectl get pods -o wide
+* kubectl get pods [pod name] -o jsonpath='{.spec.containers[*].name}' **// Get containers for pod** 
 * kubectl delete pod [pod name]
 * kubectl delete --all pods
 * kubectl get pod [pod-name] -o yaml > pod-definition.yaml
