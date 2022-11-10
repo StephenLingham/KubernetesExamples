@@ -19,7 +19,7 @@
 - `kubectl rollout history deploy [deployment name]`
 - `kubectl config set-context $(kubectl config current-context) --namespace [namespace name]`
 - `kubectl config set-context --current --namespace=[namespace name]`
-- `kubectl config view -o jsonpath='{..namespace}'` **// Gets the current context**
+- `kubectl config view -o jsonpath='{..namespace}'` **// Gets the current namespace if set**
 - `kubectl create cm [config map name] --from-literal=[key]=[value]`
 - `kubectl explain pods --recursive | grep envFrom -A3`
 
