@@ -17,13 +17,16 @@
 - `kubectl delete all --all`
 - `kubectl rollout status deploy [deployment name]`
 - `kubectl rollout history deploy [deployment name]`
-- `kubectl config current-context` **// Gets the current context**
-- `kubectl config set-context --current --namespace=[namespace name]` **// Sets the namespace**
-- `kubectl config view -o jsonpath='{..namespace}'` **// Gets the current namespace if it's set**
 - `kubectl create cm [config map name] --from-literal=[key]=[value]`
-- `kubectl explain pods --recursive | grep envFrom -A3`
 
-### Pod commands
+### Config
+
+- `kubectl config view` **// View the config**
+- `kubectl config current-context` **// Get the current context**
+- `kubectl config set-context --current --namespace=[namespace name]` **// Set the namespace**
+- `kubectl config view -o jsonpath='{..namespace}'` **// Get the current namespace if it's set**
+
+### Pods
 
 - `kubectl create -f [pod-definition.yaml]`
 - `kubectl apply -f [pod-definition.yaml]`
@@ -41,6 +44,7 @@
 - `kubectl exec -it [pod name] -n [namespace] -- [command e.g. bash or sh]`
 - `kubectl explain pod --recursive | less`
 - `kubectl explain pod -- recursive | grep -A5 tolerations`
+- `kubectl explain pods --recursive | grep envFrom -A3`
 
 ### Imperative commands
 
