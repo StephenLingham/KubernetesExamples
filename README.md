@@ -17,9 +17,9 @@
 - `kubectl delete all --all`
 - `kubectl rollout status deploy [deployment name]`
 - `kubectl rollout history deploy [deployment name]`
-- `kubectl config set-context $(kubectl config current-context) --namespace [namespace name]`
-- `kubectl config set-context --current --namespace=[namespace name]`
-- `kubectl config view -o jsonpath='{..namespace}'` **// Gets the current namespace if set**
+- `kubectl config current-context` **// Gets the current context**
+- `kubectl config set-context --current --namespace=[namespace name]` **// Sets the namespace**
+- `kubectl config view -o jsonpath='{..namespace}'` **// Gets the current namespace if it's set**
 - `kubectl create cm [config map name] --from-literal=[key]=[value]`
 - `kubectl explain pods --recursive | grep envFrom -A3`
 
