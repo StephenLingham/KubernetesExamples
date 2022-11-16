@@ -1,5 +1,8 @@
 # Summary sheet of useful commands
 
+Further command summaries are available in the kubernetes documentation here:
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
 ### Aliases
 
 - `alias k=kubectl`
