@@ -21,6 +21,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 - `kubectl rollout status deploy [deployment name]`
 - `kubectl rollout history deploy [deployment name]`
 - `kubectl create cm [config map name] --from-literal=[key]=[value]`
+- `kubectl get resourcequota -n [namespace]` # Gets the resource quota for a namespace showing the memory and CPU limits for the namespace
 
 ### Config
 
