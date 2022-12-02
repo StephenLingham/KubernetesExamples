@@ -37,7 +37,8 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 - `kubectl get pods --all-namespaces`
 - `kubectl get pods -n [namespace]`
 - `kubectl get pods -o wide`
-- `kubectl get pods [pod name] -o jsonpath='{.spec.containers[*].name}'` **// Get containers for pod**
+- `kubectl get pod [pod name] -o jsonpath='{.spec.containers[*].name}'` **// Get containers for pod**
+- `kubectl get pod [pod name] -o jsonpath='{.spec.containers[*].image}'` **// Get the image for each container in a pod**
 - `kubectl delete pod [pod name]`
 - `kubectl delete --all pods`
 - `kubectl get pod [pod-name] -o yaml > pod-definition.yaml`
