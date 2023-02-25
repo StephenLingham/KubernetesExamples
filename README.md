@@ -90,3 +90,6 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ### Observability
 
 - `k logs [pod name] [container name]`
+- `k top` **// Provides a list of all running pods or nodes with a snapshot of their resource utilisation**
+- `k top pod --namespace [namespace]`
+- `k top node`
