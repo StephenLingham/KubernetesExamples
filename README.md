@@ -16,7 +16,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 - `kubectl edit rs [replica set name]`
 - `kubectl describe rs [rs name] | grep -i image`
 - `kubectl scale rs [rs name] --replicas [num replicas]`
-- `kubectl get all`
+- `kubectl get all -A` **// Gets all kubernetes objects in all namespaces**
 - `kubectl delete all --all`
 - `kubectl rollout status deploy [deployment name]`
 - `kubectl rollout history deploy [deployment name]`
