@@ -29,6 +29,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 - `kubectl config current-context` **// Get the current context**
 - `kubectl config set-context --current --namespace=[namespace name]` **// Set the namespace**
 - `kubectl config view -o jsonpath='{..namespace}'` **// Get the current namespace if it's set**
+- `kubectl get namespaces` **// Gets a list of all namespaces**
 
 ### Pods
 
