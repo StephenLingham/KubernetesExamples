@@ -6,7 +6,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ### Aliases
 
 - `alias k=kubectl`
-- `alias dr=--dry-run=client -o yaml`
+- `alias dr='--dry-run=client -o yaml'`
 
 ### Misc
 
